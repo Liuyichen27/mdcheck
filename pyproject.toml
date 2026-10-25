@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdcheck"
+version = "1.0.0"
+description = "Markdown 体检：代码块、标题层级、死链检查，附带目录生成"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Liuyichen27" }]
+keywords = ["markdown", "lint", "toc", "links", "cli", "docs"]
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Documentation",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Liuyichen27/mdcheck"
+
+[project.scripts]
+mdcheck = "mdcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
