@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mdcheck"
-version = "1.0.0"
+version = "1.1.0"
 description = "Markdown 体检：代码块、标题层级、死链检查，附带目录生成"
 readme = "README.md"
 requires-python = ">=3.8"
